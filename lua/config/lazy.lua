@@ -32,4 +32,6 @@ require("lazy").setup({
   install = { colorscheme = { "habamax" } },
   -- automatically check for plugin updates
   checker = { enabled = true },
+  -- image.nvim は processor = "magick_cli" を使うため luarocks 不要
+  rocks = { enabled = false },
 })
